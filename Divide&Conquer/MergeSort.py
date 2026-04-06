@@ -1,4 +1,4 @@
-# Authors: Chloe Robinson, Camila Fienco, Tiffany Hsu
+# Authors: Chloe Robinson, Camila Fienco, Tiffany Shi
 # Purpose: Implementing Merge Sort using Divide and Conquer
 
 # Function: Merge Sort

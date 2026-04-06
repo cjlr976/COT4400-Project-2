@@ -1,4 +1,4 @@
-# Authors: Chloe Robinson, Camila Fienco
+# Authors: Chloe Robinson, Camila Fienco, Tiffany Shi
 # Purpose: Implementing Activity Selection using Greedy Approach
 
 def activitySelection(activities):
