@@ -40,7 +40,7 @@ def merge(left, right):
 def main():
     #Test cases
     sorted_array = [1, 2, 34, 45, 59, 102]
-    unsorted_array = [5, 42, 14, 20, 1, 24, 76, 58]
+    unsorted_array = [42, 7, 91, 15, 63, 28, 84, 3, 56, 77, 19, 68, 24, 95, 11, 39, 72, 5, 88, 30]
     reverseSorted_array = [123, 86, 54, 32, 20, 12, 9]
 
     choice = input("1:Sorted array\n2:Unsorted array\n3:Reverse sorted array:\nEnter: ")

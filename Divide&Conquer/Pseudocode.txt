@@ -1,0 +1,30 @@
+funct merge_sort(array A)
+        //Base case: If the array is empty or only has 1 element
+        if A.length() <= 1
+            return A
+        
+        //Divide recursively
+        mid = midpoint of array
+        left = merge_sort(low to midpoint)
+        right = merge_sort(midpoint to high)
+
+        //Combine
+        return merge(left, right)
+
+    //Conquer: Sort and merge the array
+        //Keep track of sorted part of the array
+        merge = []
+        //Keep track of 
+        i = j = 0
+
+        //Iterate through left and right side, manually sort
+        while i<left.length() and j<right.length()
+            if left value < right value:
+                //Element is in the correct spot
+                add to merge[]
+            else:
+                //Add the lower element
+                add to merge[]
+        
+        return sorted and merged array
+

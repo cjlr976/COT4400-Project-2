@@ -1,0 +1,27 @@
+funct knapsack(weights, values, capacity)
+    num_items = length of weights array
+    //Initialize DP table
+    matix = 2D array of size (n + 1) by capacities
+
+    //Iterate trhough all items and capacities
+    for item from 1 to num_items:
+        for cur_weight from 1 to capcity:
+            if weights[item - 1] <= cur_weight:
+
+                //Calculate value if we exclude the current item
+                exclude_val = matrix[item - 1][cur_weight]
+
+                //Calculate value if we include the current item
+                remaining = cur_weight - weights[item - 1]
+                include_val = values[item - 1] + matrix[item - 1][remaining]
+
+                //Store the maximum of the two options
+                matrix[item][cur_weight] = max(exclude_val, include_val)
+
+                else:
+                    //Item is too heavy so exclude item
+                    matrix[item][cur_weight] = matrix[item -1][cur_weight]
+
+            //Return the maximum value achieved in bottom right corner
+            //return matrix[num_items][capacity]
+
