@@ -1,0 +1,22 @@
+func activitySelection(activities)
+    // add index to activities
+    for each activity in activities
+        attach an index number to the activity
+    
+    // sort activities
+    sort activities by finish time in ascending order
+
+    count = 0
+    last_end = negative infinity
+    selected = []
+
+    // iterate through activities
+    for each (start, end, index) in activities
+        // add activity if it doe not overlap with previous activity
+        if start >= last_end
+            count = count + 1
+            last_end = end
+            append index to selected
+    
+    return count, selected
+

@@ -81,7 +81,6 @@ def main():
         # function call
         result = merge_sort(test["Array"])
         print(f"Sorted Array: {result}")
-
         print("-------------------------------\n")
 
     experimental_eval()
