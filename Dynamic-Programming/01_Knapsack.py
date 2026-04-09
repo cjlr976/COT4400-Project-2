@@ -17,6 +17,7 @@ def experimental_eval():
     '''
 
     print("--- Experimental Evaluation: ---\n")
+    print("--- Experiment 1: Capacity Scales with Input ---\n")
     print("Input Size | Time")
     print("-------------------------")
 
@@ -38,6 +39,30 @@ def experimental_eval():
         execution_time = (end_time - start_time) * 1000
 
         print(f"{size:<10} | {execution_time:.4f} ms")
+
+    print("\n--- Experiment 2: Capacity Is Constant ---\n")
+    print("Input Size | Time")
+    print("-------------------------")
+
+    input_sizes = [10, 100, 1000]
+
+    for size in input_sizes:
+        # generate random weights and values for the current size
+        weights = [random.randint(1, 100) for _ in range(size)]
+        values = [random.randint(1, 100) for _ in range(size)]
+
+        #scale capacity with the input size
+        capacity = 100
+
+        start_time = time.perf_counter()
+        knapsack(weights, values, capacity, False)
+        end_time = time.perf_counter()
+
+        # calculate milliseconds
+        execution_time = (end_time - start_time) * 1000
+
+        print(f"{size:<10} | {execution_time:.4f} ms")
+
 
 def knapsack(weights, values, capacity, show_output = True):
     '''

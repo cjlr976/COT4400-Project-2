@@ -54,7 +54,7 @@ def activitySelection(activities):
 def main():
     # Test cases
     test_cases = [
-        {"Name":"Small input", "Activities": [(1, 3), (2, 4), (3, 5)]}, # Small input
+        {"Name":"Small input", "Activities": [(3, 5), (1, 3), (2, 4)]  }, # Small input
         {"Name":"Medium input", "Activities": [(1, 3), (2, 5), (4, 6), (6, 7), (5, 8), (7, 9)]}, # Medium input
         {"Name":"Edge case", "Activities": []} # Edge case: No activities
     ]
@@ -68,8 +68,6 @@ def main():
         print(f"Maximum activities selected:{count}")
         print(f"Selected activity indices:{selected}")
         print("-------------------------------\n")
-
-
 
 
     experimental_evaluation()

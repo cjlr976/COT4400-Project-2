@@ -31,12 +31,12 @@ def merge_sort(arr):
     if len(arr) <= 1:
         return arr
 
-    #Divide recursively
+    #Divide and conquer recursively
     mid = floor(len(arr) / 2)
     left_half = merge_sort(arr[:mid])
     right_half = merge_sort(arr[mid:])
 
-    #Combine
+    #Combine results
     return merge(left_half, right_half)
 
 #Conquer using merge function
